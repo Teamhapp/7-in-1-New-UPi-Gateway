@@ -1,0 +1,41 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteCond     %{SERVER_PORT} ^80$
+RewriteRule     ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+ 
+#utr for bharatpe and google pay
+
+RewriteRule ^instantpay/bharatpe/payment-verify bharatpay/verify.php [NC,L]
+RewriteRule ^instantpay/googlepay/payment-verify googlepay/verify.php [NC,L]
+
+#this is for utl for payment and status
+RewriteRule ^order/payment-status  payment/payment_status.php [NC,L]
+RewriteRule ^order2/payment-status phonepe/payment_status.php [NC,L]
+RewriteRule ^order3/payment-status paytm/payment_status.php [NC,L]
+RewriteRule ^order4/payment-status bharatpay/payment_status.php [NC,L]
+RewriteRule ^order5/payment-status googlepay/payment_status.php [NC,L]
+
+RewriteRule ^api/create-order payment/create_order.php [NC,L]
+RewriteRule ^api/check-order-status payment/check_order.php [NC,L]
+
+
+
+#instance url and google pay core files
+
+
+RewriteRule ^api/instance/events/google-pay corefilesinstance/googlepay/googlepay.php [NC,L]
+RewriteRule ^api/instance/verify/google-pay corefilesinstance/googlepay/googlepayverify.php [NC,L]
+
+
+
+
+
+
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php73” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

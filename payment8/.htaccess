@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+# RewriteRule for the payment link
+RewriteRule ^instant-pay/([a-zA-Z0-9]+)$ pay_now.php?token=$1 [L,QSA]
+RewriteRule ^verify/([a-zA-Z0-9]+)$ verify.php?token=$1 [L,QSA]

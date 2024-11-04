@@ -1,0 +1,295 @@
+/**Custom CSS**/
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.1em !important;
+    color: #560c6b
+}
+
+#header #logo img {
+    width: 200px
+}
+
+#header {
+    padding: 10px 15px;
+    background-color: #fff
+}
+
+.nav-menu a {
+    text-transform: capitalize;
+    font-size: 15px
+}
+
+#header.header-scrolled .nav-menu>li .menu-active {
+    color: #d2153e !important
+}
+
+.nav-menu li>.menu-active {
+    color: #d2153e !important
+}
+
+.section-gap {
+    padding: 40px 0
+}
+
+.section-title-wrap {
+    margin-bottom: 40px
+}
+
+.hero-section .content-wrap h1 {
+    font-weight: 600
+}
+
+.hero-section .content-wrap h1::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #d2153e;
+    margin-top: 15px;
+    margin-left: 0
+}
+
+section h1::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #d2153e;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.single-points {
+    padding: 30px 30px 15px 30px;
+    text-align: center
+}
+
+.single-points img {
+    width: 80px
+}
+
+.single-points:hover h4 {
+    color: #d2153e;
+}
+
+.feature-list .icon img {
+    width: 80px
+}
+
+.d1-gradient-bg,
+.gradient-bg,
+.gradient-bg2,
+.single-price .price-top .overlay-bg,
+.version1 .brands-section,
+.single-review .userinfo-wrap .overlay-bg,
+.version1 .footer-area {
+    background-image: -moz-linear-gradient(150deg, #141da2 10%, #e91e63 100%);
+    background-image: -webkit-linear-gradient(150deg, #141da2 10%, #e91e63 100%);
+    background-image: -ms-linear-gradient(150deg, #141da2 10%, #e91e63 100%);
+}
+
+.version1 .footer-area {
+    background: #eef9fe !important
+}
+
+.footer-area .single-footer-widget h4 {
+    color: #515978
+}
+
+.footer-area .single-footer-widget p {
+    color: #515978
+}
+
+.footer-area .single-footer-widget .menu-list li a {
+    color: #d2153e
+}
+
+.footer-area .single-footer-widget .social-icons li a {
+    background: #515978
+}
+
+.footer-area .footer-bottom p {
+    color: #515978
+}
+
+.nav-menu>li {
+    margin-left: 25px
+}
+
+.nav-menu li img {
+    width: 20px;
+    margin-top: -5px
+}
+
+#mobile-nav li img {
+    width: 22px;
+    margin-top: -5px
+}
+
+.languagebox a {
+    margin-right: 10px;
+    font-size: 14px
+}
+
+.languagebox img {
+    height: 30px
+}
+
+.modal-backdrop {
+    opacity: 0.8 !important;
+}
+
+.footerlogo {
+    width: 160px;
+    margin-bottom: 15px
+}
+
+.footer-area .single-footer-widget h4 {
+    margin-bottom: 25px
+}
+
+img.socialicon {
+    width: 38px
+}
+
+.page-top-section {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    background: url("../img/page-top-bg.png") center/cover
+}
+
+h1.left::after {
+    margin-left: 0px
+}
+
+.single-ex-process img {
+    width: 60px
+}
+
+.termlist h5 {
+    margin-bottom: 10px
+}
+
+.contactlist li {
+    padding-left: 50px;
+    line-height: 1
+}
+
+.contactlist li.theme-icons-wrap .theme-icons {
+    margin-right: 10px;
+    margin-left: -50px
+}
+
+.theme-icons-wrap {
+    z-index: 1;
+}
+
+.theme-icons-wrap .theme-icons {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.theme-icons-base-bg {
+    display: inline-block;
+    color: #fff;
+    background: #d2153e;
+    border-width: 0;
+    border-style: solid;
+    border-color: transparent;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.radius-circle {
+    border-radius: 50% !important;
+}
+
+.theme-icons-sm {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 6px;
+}
+
+.updown {
+    margin: 0px auto;
+    animation: Updown 1s infinite alternate;
+}
+
+@keyframes Updown {
+    from {
+        margin-top: 20px;
+    }
+    to {
+        margin-top: 0px;
+    }
+}
+
+.updown2 {
+    margin: 0px auto;
+    animation: Updown 1.5s infinite alternate;
+}
+
+@keyframes Updown2 {
+    from {
+        margin-top: 0px;
+    }
+    to {
+        margin-top: 40px;
+    }
+}
+
+#mobile-nav-toggle {}
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+
+.version1 .hero-section {
+    background: url("../img/hero/hero-bg3.png") no-repeat left center/cover;
+}
+
+/**Media**/
+
+@media(max-width:575px) {
+    .updown-money {
+        position: absolute;
+        margin-left: -15px
+    }
+}
+
+@media (min-width: 576px) {
+    .updown-money {
+        position: absolute;
+        margin-left: -15px
+    }
+}
+
+@media (min-width: 768px) {
+    .updown-money {
+        position: absolute
+    }
+}
+
+@media (min-width: 992px) {
+    .updown-money {
+        position: absolute
+    }
+}
+
+@media (min-width: 1200px) {
+    .updown-money {
+        position: absolute
+    }
+}
